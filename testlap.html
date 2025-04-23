@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <table>
+        <tr>
+            <td><a href="testlap.html">Bài 1</a></td>
+            <td><a href="demo2.html">Bài 2</a></td>
+            <td><a href="demo3.html">Bài 3</a></td>
+            <td><a href="demo4.html">Bài 4</a></td>
+            <td><a href="demo5.html">Bài 5</a></td>
+            <td><a href="demo6.html">Bài 6</a></td>
+            <td><a href="test7.html">Bài 7</a></td>
+        </tr>
+    </table>
+    <body>
+        <h2>Thẻ p được thay đổi theo các phần tử của X</h2>
+        <p>X ở phần tử thứ 0</p>
+        <p>X ở phần tử thứ 1</p>
+
+        <p id="demo"></p>
+
+        <script>
+            var x = document.getElementsByTagName("p");
+            document.getElementById("demo").innerHTML = 'The text in first garagraph (index 0) is: '+ x[1].innerHTML;
+        </script>
+    </body>
+</html>
